@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "monserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(140deg,#a29bfe,#55efc4 );
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+.txt-add-task{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #82589F;
+    background: none;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+}
+
+h3{
+    margin: 10px 0;
+}
+
+.task{
+    width: 100%;
+    padding: 18px;
+    margin: 6px 0;
+    overflow: hidden;
+
+}
+
+.task i{
+    float: right;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.not-completed .task{
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.completed .task{
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+
+.not-completed{
+    max-height: 350px;
+    min-height:25px;
+    overflow-y: scroll;
+}
