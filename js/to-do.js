@@ -80,3 +80,14 @@ function deleteTask(idTask){
 }
 
 showTask();
+
+function checkTask(idTask){
+    console.log(taskArray);
+    $("#id-task" + idTask).remove();
+    //Change task status to completed.
+    taskArray[idTask].statusTask = "completed";
+    // Save array data as string in localstorage
+    localStorage.setItem('taskArray', JSON.stringify(taskArray));
+    console.log(taskArray);
+    showTask();
+}
